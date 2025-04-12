@@ -5,7 +5,7 @@ const source$ = of(1, 2, 3, 4, 5);
 
 document.write('maps');
 
-source$.pipe(mergeMap(id => of(`User Data ${id}`).pipe(delay(200)))).subscribe(console.log);
+  source$.pipe(mergeMap(id => of(`User Data ${id}`).pipe(delay(200)))).subscribe(console.log);
 
 
 const search$ = of(1, 2, 3, 4, 5);
